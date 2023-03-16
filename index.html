@@ -1,0 +1,200 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 13 19:28:51 2023
+
+@author: manavpatel
+"""
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="./myPhoto.jpeg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+
+  <a href="#achievements" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file-pdf-o w3-xxlarge"></i>
+    <p>ACHIEVEMENTS</p>
+  </a>
+
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#achievements" class="w3-bar-item w3-button" style="width:25% !important">ACHIEVEMENTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Manav Patel.</h1>
+    <h2>Software Developer</h2>
+    <img src="./myPhoto.jpeg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:970px" class="w3-opacity">
+    <p>Hello, my name is Manav Patel, a Machine Learning Engineer with 2+ years of experience in developing ML models. 
+      I am currently pursuing an advanced diploma in Software Engineering Technology - Artificial Intelligence. 
+      I am proficient in neural networks, unsupervised, and supervised learning, and have experience with web development and distributed storage systems. 
+      I am passionate about using my skills to make a positive impact in the field of AI. I possess strong interpersonal, problem-solving, and leadership skills, 
+      and I am confident that my skills and experience make me a valuable asset to any organization.
+    </p>
+  
+    <form action="https://drive.google.com/file/d/1QYj9h1qyouvf8D6geU7H7r7ZhJhIL9xB/view?usp=share_link" method="get" target="_blank">
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    </form>
+      <hr style="width:970px" class="w3-opacity">
+
+    
+    <h2 class="w3-padding-16 w3-text-light-grey" id="projects">My Projects</h2><br>
+    <h3 class="w3-padding-16 w3-text-light-grey">1) Bycycle Theft (Toronto Police) </h3>
+    <h4>Using supervised learning algorithms, these models are trained on historical data, such as time of day, location, and weather conditions, to identify patterns and correlations between various factors and the likelihood of a theft occurring. This data is then used to make predictions about where and when thefts are most likely to occur in the future.
+      By analyzing data from previous years, researchers have found that bicycle thefts tend to occur more frequently in certain areas, such as downtown Toronto, and at certain times of day, such as during rush hour. They have also found that factors such as weather conditions and the type of bike can play a role in the likelihood of a theft occurring.
+      Using these insights, machine learning models can be trained to predict the likelihood of a bicycle theft occurring in a particular location and at a particular time. This information can be used by law enforcement and other stakeholders to deploy resources more effectively and reduce the overall number of thefts in the city.
+      Overall, the use of machine learning and predictive modeling techniques has shown promise in addressing the issue of bicycle theft in Toronto, and could potentially be applied in other cities and contexts as well.</h4>
+    <img src="./BicycleTheft.png" alt="boy" class="w3-image" width="992" height="1108">
+    <p>References: bicycle-thefts. (n.d.). https://data.torontopolice.on.ca/pages/bicycle-thefts</p>
+    <br><br>
+    <h3 class="w3-padding-16 w3-text-light-grey">2) Lunar Lander Mission using TF-Agents.</h3>
+    <h4>The mission's objective is to successfully land the rover between the two flags. For reinforcement learning models, the lunar lander mission poses a number of difficulties, 
+      including the large dimensionality of the input space, the sparse reward structure, and the requirement to strike a balance between exploration and exploitation. 
+      To solve these issues, I have employed several methodologies such as deep neural networks, value-based systems, and actor-critic models. I've shown that tf agents 
+      can successfully learn to navigate the spacecraft and land securely on the moon by training these models in a simulated lunar lander environment. Additionally, these models 
+      can be used to investigate various circumstances and environments, such as altering the gravitational force or the existence of impediments.</h4>
+      <img src="./lunarLander.gif" alt="boy" class="w3-image" width="992" height="1108">
+    <br><br>
+    <h3 class="w3-padding-16 w3-text-light-grey">3) MIT-Indoor Scene Detection.</h3>
+    <h4>During my tenure as a student studying data science, I was involved in an image classification project that utilized a convolutional neural network (CNN) to accurately categorize indoor scenes in the MIT-IndoorScene dataset. 
+      Our main objective was to create a model that could correctly identify the indoor environment depicted in an image, such as an office, living room, or bedroom. To achieve this, we utilized transfer learning techniques 
+      to take advantage of the pre-trained weights of a commonly used CNN architecture, which we then fine-tuned on our own dataset using the Adam optimizer. In addition, we employed data augmentation strategies such as random 
+      rotations and flips to introduce more variety in our training data, which helped to enhance the generalization capabilities of our model. After a thorough evaluation process, our model achieved an accuracy of over 90%, 
+      demonstrating the efficacy of CNNs for indoor scene classification. Our work has important applications in fields like robotics, where precise scene recognition is essential for autonomous navigation and interaction with indoor environments.</h4>
+      <img src="./MIT-Indoorpng.png" alt="boy" class="w3-image" width="992" height="1108">
+      <hr style="width:970px" class="w3-opacity">
+
+      <br><br>
+ 
+
+    
+    <!-- Grid for pricing tables -->
+    <h2 class="w3-padding-16 w3-text-light-grey" id= "achievements">My Achievements</h2>
+
+    <h3>1) </h3>
+    <img src="./certi1.png" style="width:100%">
+    <form action="https://drive.google.com/file/d/1naANtvBLXW2o2601P1vfOngq6ra__NPD/view?usp=share_link" method="get" target="_blank">
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Artificial Intelligence Foundations: Machine Learning
+    </button>
+    </form>
+
+    <h3>2) </h3>
+    <img src="./certi2.png" style="width:100%">
+    <form action="https://drive.google.com/file/d/12gIHC0ruIz6cQ4cMsjVkf2j0_E-6Ldm8/view?usp=share_link" method="get" target="_blank">
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Building and Deploying Deep Learning Applications with TensorFlow
+    </button>
+    </form>
+
+    <h3>3) </h3>
+    <img src="./college1.jpeg" style="width:100%">
+    <form action="https://drive.google.com/file/d/1NjXinA-rLkah2qKm162aFlNj6Vf_xlfp/view?usp=share_link" method="get" target="_blank">
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Unofficial Transcript
+    </button>
+    </form>
+
+    <hr style="width:970px" class="w3-opacity">
+
+  </div>
+
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Toronto, CA</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 416-986-0655</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mpate765@my.centennialcollege.ca</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  <p class = "w3-small">Manav Patel</p>
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
